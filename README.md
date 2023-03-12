@@ -1,0 +1,2 @@
+# base
+corn.go base
