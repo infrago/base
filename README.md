@@ -1,2 +1,2 @@
 # base
-corn.go base
+infra.go base
