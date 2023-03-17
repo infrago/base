@@ -79,11 +79,11 @@ type (
 		Children Vars
 
 		// Encode 编码方式
-		// 具体参考 chef 内置的 codec 模块
+		// 具体参考 内置的 codec 模块
 		Encode string
 
 		// Decode 解码方式
-		// 具体参考 chef 内置的 codec 模块
+		// 具体参考 内置的 codec 模块
 		Decode string
 
 		// Empty 自定义参数为空时的返回结果
