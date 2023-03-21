@@ -10,13 +10,16 @@ type (
 
 	// Res 操作结果
 	Res interface {
-		// OK 函数返回操作是否成功，Res 对象为空，或是 Code() 为 0，表示成功，其它均表示失败。
+		// OK 操作是否成功
+		// Res 对象为空，或是 Code() 为 0，表示成功，其它均表示失败。
 		OK() bool
 
-		// Fail 函数返回操作是否失败，与 OK() 正好相反。
+		// Fail 操作是否失败
+		// 与 OK() 正好相反。
 		Fail() bool
 
-		// Code 表示返回的状态码，其中 0 表示成功，其它均表示失败。
+		// Code 表示返回的状态码
+		// 其中 0 表示成功，其它均表示失败。
 		Code() int
 
 		// State 表示结果中的原始状态信息
@@ -25,14 +28,13 @@ type (
 		// Args 表示Res所携带的参数。
 		Args() []Any
 
-		// With 方法，使用新的参数，生成一个新的 Res对象
-		// 统常在需要返回动态结果的时候使用
+		// With 携带参数
+		// 使用新的参数，生成一个新的 Res对象
+		// 通常在需要返回动态结果的时候使用
 		With(args ...Any) Res
 
-		// String 兼容String方法
-		String() string
-
-		// Error 为兼容 error 对象的方法
+		// Error 错误信息
+		// 兼容 error 对象
 		Error() string
 	}
 
@@ -66,11 +68,11 @@ type (
 		Default Any
 
 		// Setting 参数配置，自定义配置
-		// 一些特定的情况下，会有一些自定义的配置，
+		// 比如，限制参数值的大小，范围，等各类更明细的处理
 		Setting Map
 
 		// Options 参数选项
-		// 此参数不为空的时候，表示，值只允许是其中之一，相关于枚举选一
+		// 此参数不为空的时候，表示，值只允许是其中之一，相当于枚举选一
 		// 注意，key为值，value为描述
 		Options Map
 
