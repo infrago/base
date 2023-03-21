@@ -1,2 +1,2 @@
 # base
-infra.go base
+infra.Go base
