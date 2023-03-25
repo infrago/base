@@ -31,7 +31,7 @@ type (
 		// With 携带参数
 		// 使用新的参数，生成一个新的 Res对象
 		// 通常在需要返回动态结果的时候使用
-		With(args ...Any) Res
+		With(...Any) Res
 
 		// Error 错误信息
 		// 兼容 error 对象
