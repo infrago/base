@@ -69,14 +69,16 @@ const (
 	LE  = "<=" //小于等于
 	LTE = "<=" //小于等于
 
-	IN    = "$$IN$$"    //支持  WHERE id IN (1,2,3)
-	NI    = "$$NOTIN$$" //支持	WHERE id NOT IN(1,2,3)
-	NIN   = "$$NOTIN$$" //支持	WHERE id NOT IN(1,2,3)
-	ANY   = "$$ANY$$"   //支持数组字段的
-	OR    = "$$OR$$"    //或操作，
-	NOR   = "$$NOR$$"   //支持数组字段的
-	CON   = "$$CON$$"   //包含 array contais @>
-	CONBY = "$$CONBY$$" //包含 array is contais by <@
+	IN      = "$$IN$$"      //支持  WHERE id IN (1,2,3)
+	NI      = "$$NOTIN$$"   //支持	WHERE id NOT IN(1,2,3)
+	NIN     = "$$NOTIN$$"   //支持	WHERE id NOT IN(1,2,3)
+	ANY     = "$$ANY$$"     //支持数组字段的
+	OR      = "$$OR$$"      //或操作，
+	NOR     = "$$NOR$$"     //支持数组字段的
+	CON     = "$$CON$$"     //包含 array contais @>
+	CONBY   = "$$CONBY$$"   //包含 array is contais by <@
+	OVERLAP = "$$OVERLAP$$" //交集
+	OLAP    = "$$OVERLAP$$" //交集
 
 	SEARCH    = "$$full$$"  //like搜索
 	FULLLIKE  = "$$full$$"  //like搜索
