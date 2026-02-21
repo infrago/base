@@ -16,7 +16,7 @@ type (
 		Error() string
 	}
 
-	Vars = map[string]Var
+	Vars map[string]Var
 	Var  struct {
 		nil      bool
 		Type     string
