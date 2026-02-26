@@ -18,22 +18,26 @@ type (
 
 	Vars map[string]Var
 	Var  struct {
-		nil      bool
-		Type     string
-		Required bool
-		Nullable bool
-		Name     string
-		Text     string
-		Default  Any
-		Setting  Map
-		Options  Map
-		Children Vars
-		Encode   string
-		Decode   string
-		Empty    Res
-		Error    Res
-		Check    func(Any, Var) bool
-		Convert  func(Any, Var) Any
+		nil       bool
+		Type      string
+		Required  bool
+		Nullable  bool
+		Name      string
+		Text      string
+		Default   Any
+		Unique    bool
+		Check     string
+		Collation string
+		Comment   string
+		Setting   Map
+		Options   Map
+		Children  Vars
+		Encode    string
+		Decode    string
+		Empty     Res
+		Error     Res
+		Valid     func(Any, Var) bool
+		Value     func(Any, Var) Any
 	}
 )
 
