@@ -10,7 +10,7 @@ type (
 		OK() bool
 		Fail() bool
 		Code() int
-		State() string
+		Status() string
 		Args() []Any
 		With(...Any) Res
 		Error() string
