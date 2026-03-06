@@ -41,11 +41,6 @@ type (
 	}
 )
 
-const (
-	ASC  = 1
-	DESC = -1
-)
-
 var (
 	Nil = Var{nil: true}
 )

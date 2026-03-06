@@ -1,6 +1,14 @@
 package base
 
 const (
+	ASC  = 1
+	DESC = -1
+
+	BYASC  = "asc"
+	BYDESC = "desc"
+)
+
+const (
 	OpAnd       = "$and"
 	OpOr        = "$or"
 	OpNor       = "$nor"
