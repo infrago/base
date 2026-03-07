@@ -47,6 +47,9 @@ const (
 	OptAgg       = "$agg"
 	OptUnsafe    = "$unsafe"
 	OptBatch     = "$batch"
+	OptWithDeleted = "$withDeleted"
+	OptOnlyDeleted = "$onlyDeleted"
+	OptUnscoped    = "$unscoped"
 
 	OptFilter    = "$filter"
 	OptFilters   = "$filters"
