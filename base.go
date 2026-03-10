@@ -13,6 +13,8 @@ type (
 		Status() string
 		Args() []Any
 		With(...Any) Res
+		Retry(...bool) Res
+		Retriable() bool
 		Error() string
 	}
 
